@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Libros</title>
+</head>
+<body>
+    <h1>Tienda de Libros</h1>
+
+    <div>
+        <label for="tituloLibro">Título:</label>
+        <input type="text" id="tituloLibro" placeholder="Escribe el título">
+        
+        <label for="precioLibro">Precio:</label>
+        <input type="text" id="precioLibro" placeholder="Ej: 10.00">
+        
+        <button id="agregarLibroBtn">Agregar Libro</button>
+    </div>
+
+    <h2>Libros Disponibles</h2>
+    <div id="librosDisponibles">
+        <div class="libro">
+            <span>Ejemplo 1 - $5.00</span>
+            <button onclick="agregarAlCarrito('Ejemplo 1', 5.00)">Agregar al carrito</button>
+        </div>
+        <div class="libro">
+            <span>Ejemplo 2 - $9.00</span>
+            <button onclick="agregarAlCarrito('Ejemplo 2', 9.00)">Agregar al carrito</button>
+        </div>
+        <div class="libro">
+            <span>Ejemplo 3 - $5.00</span>
+            <button onclick="agregarAlCarrito('Ejemplo 3', 5.00)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h2>Carrito de Compras</h2>
+    <div id="listaCarrito"></div>
+    <h3 id="total">Total: $0.00</h3>
+
+    <script src="TP_integrador.js"></script>
+</body>
+</html>
